@@ -21,7 +21,15 @@
       "styles": [
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.js",
+        "./assets/js/core/popper.min.js",
+        "./assets/js/core/bootstrap.min.js",
+        "./assets/js/plugins/bootstrap-switch.js",
+        "./assets/js/plugins/chartist.min.js",
+        "./assets/js/plugins/bootstrap-notify.js",
+        "./assets/js/light-bootstrap-dashboard.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

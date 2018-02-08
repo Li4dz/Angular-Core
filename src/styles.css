@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+.sidebar .logo-img,
+.bootstrap-navbar .logo-img {
+  width: 30px;
+  display: inline-block;
+  max-height: 30px;
+  margin-right: 10px; 
+  text-align: left}
+
+.sidebar .logo-img img,
+.bootstrap-navbar .logo-img img {
+width: 35px;
+top: 11px;
+position: absolute; }
