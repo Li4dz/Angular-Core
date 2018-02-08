@@ -19,7 +19,8 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "../node_modules/sweetalert2/dist/sweetalert2.min.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.js",
@@ -28,7 +29,8 @@
         "./assets/js/plugins/bootstrap-switch.js",
         "./assets/js/plugins/chartist.min.js",
         "./assets/js/plugins/bootstrap-notify.js",
-        "./assets/js/light-bootstrap-dashboard.js"
+        "./assets/js/light-bootstrap-dashboard.js",
+        "../node_modules/sweetalert2/dist/sweetalert2.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
