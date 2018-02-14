@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
+import { AuthService } from "../../services/auth.service";
 
 @Component({
   selector: 'app-login',
@@ -8,13 +9,16 @@ import { Router } from "@angular/router";
 })
 export class LoginComponent implements OnInit {
 
-  constructor(public router : Router) { }
+  constructor(public router : Router,
+              private auth : AuthService) { }
 
   ngOnInit() {
   }
 
   login(){
-    localStorage.setItem('isLoggedin', 'true');
+    this.auth.login();
+    // localStorage.setItem('isLoggedin', 'true');
+    // this.router.navigate(['/dashboard'])    
   }
 
 }

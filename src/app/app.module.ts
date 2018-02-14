@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AuthGuard } from "./security";
 import { SweetAlert } from './common/sweet-alert/sweet-alert';
+import { AuthService } from './services/auth.service';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { SweetAlert } from './common/sweet-alert/sweet-alert';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [ AuthGuard, SweetAlert ],
+  providers: [ AuthGuard, SweetAlert, AuthService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

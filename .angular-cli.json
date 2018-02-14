@@ -30,7 +30,8 @@
         "./assets/js/plugins/chartist.min.js",
         "./assets/js/plugins/bootstrap-notify.js",
         "./assets/js/light-bootstrap-dashboard.js",
-        "../node_modules/sweetalert2/dist/sweetalert2.min.js"
+        "../node_modules/sweetalert2/dist/sweetalert2.min.js",
+        "../node_modules/auth0-js/build/auth0.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
@@ -68,6 +69,9 @@
     "component": { 
       "spec": false,
       "inlineStyle": true
+    },
+    "service": {
+      "spec": false
     }
   }
 }

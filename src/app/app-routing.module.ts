@@ -6,12 +6,14 @@ import { LoginComponent } from "./components/login/login.component";
 
 
 const routes: Routes = [
-    { path : '',            loadChildren : './components/layout/layout.module#LayoutModule', canActivate : [ AuthGuard] },
+    // { path : '',            loadChildren : './components/layout/layout.module#LayoutModule', canActivate : [ AuthGuard] },
+    { path : '',            redirectTo : 'home', pathMatch : 'full'},
     { path : 'home',        loadChildren : './components/home/home.module#HomeModule'},
     { path : 'login' ,      loadChildren : './components/login/login.module#LoginModule' },
     // { path : 'dashboard',   loadChildren : './components/layout/dashboard/dashboard.module#DashboardModule'},
     
-    { path : '**',          redirectTo : 'home'}
+    { path : '**',          redirectTo : 'home'},
+
 ];
 
 @NgModule({
